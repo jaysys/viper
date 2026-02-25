@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720">
+  <defs>
+    <linearGradient id="bg4" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0b2a3d"/>
+      <stop offset="100%" stop-color="#12557a"/>
+    </linearGradient>
+  </defs>
+  <rect width="1280" height="720" fill="url(#bg4)"/>
+  <path d="M0 460 C220 400, 470 520, 710 450 C900 400, 1100 470, 1280 430 L1280 720 L0 720 Z" fill="#1f6f8b"/>
+  <path d="M120 300 C300 240, 470 340, 650 280 C810 230, 980 290, 1160 250 L1160 440 C980 470, 790 430, 630 470 C430 520, 300 450, 120 480 Z" fill="#3a9d5d" opacity="0.86"/>
+  <path d="M360 220 L860 180 L940 490 L420 540 Z" fill="none" stroke="#ffeb3b" stroke-width="6" stroke-dasharray="12 8"/>
+  <ellipse cx="860" cy="190" rx="140" ry="62" fill="#f0f4f8" opacity="0.42"/>
+  <ellipse cx="1000" cy="240" rx="120" ry="56" fill="#f0f4f8" opacity="0.36"/>
+  <text x="40" y="66" fill="#ffffff" font-size="38" font-family="Arial, sans-serif">CAP-001-A / PENDING</text>
+  <text x="40" y="112" fill="#d8efff" font-size="24" font-family="Arial, sans-serif">Tasked strip acquired, QA pending operator review</text>
+  <rect x="930" y="24" width="318" height="88" rx="8" fill="#0a1f2d" opacity="0.74"/>
+  <text x="950" y="58" fill="#ffe082" font-size="24" font-family="Arial, sans-serif">QUALITY: PENDING</text>
+  <text x="950" y="90" fill="#fff3c4" font-size="20" font-family="Arial, sans-serif">CLOUD: 18% / RES: 0.5m</text>
+</svg>

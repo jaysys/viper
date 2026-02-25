@@ -1,0 +1,46 @@
+[
+  {
+    "template_id": "TPL-001",
+    "name": "EO 기본(도심 모니터링)",
+    "owner": "acme-user-01",
+    "scope": "PERSONAL",
+    "sensor": "EO",
+    "version": 3,
+    "status": "ACTIVE",
+    "shared_org": "acme",
+    "last_used_at": "2026-02-25T07:10:00Z"
+  },
+  {
+    "template_id": "TPL-002",
+    "name": "SAR 우천대응 표준",
+    "owner": "ops-kim",
+    "scope": "ORG",
+    "sensor": "SAR",
+    "version": 5,
+    "status": "ACTIVE",
+    "shared_org": "acme",
+    "last_used_at": "2026-02-24T14:20:00Z"
+  },
+  {
+    "template_id": "TPL-003",
+    "name": "긴급재난 EO 패스트트랙",
+    "owner": "ops-lee",
+    "scope": "ORG",
+    "sensor": "EO",
+    "version": 2,
+    "status": "ACTIVE",
+    "shared_org": "acme",
+    "last_used_at": "2026-02-25T03:05:00Z"
+  },
+  {
+    "template_id": "TPL-004",
+    "name": "레거시 테스트 템플릿",
+    "owner": "acme-user-02",
+    "scope": "PERSONAL",
+    "sensor": "EO",
+    "version": 1,
+    "status": "ARCHIVED",
+    "shared_org": "acme",
+    "last_used_at": null
+  }
+]

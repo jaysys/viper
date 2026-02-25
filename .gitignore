@@ -1,0 +1,31 @@
+# OS / editor
+.DS_Store
+.idea/
+.vscode/
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Env / secrets
+.env
+.env.*
+!.env.example
+
+# Node / build caches
+node_modules/
+**/node_modules/
+.pnpm-store/
+**/.next/
+dist/
+build/
+coverage/
+.turbo/
+
+# Temp
+tmp/
+temp/
+*.tmp

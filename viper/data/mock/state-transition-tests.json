@@ -1,0 +1,25 @@
+[
+  {
+    "id": "ST-001",
+    "request_id": "REQ-20260225-002",
+    "from": "Approved",
+    "to": "Tasked",
+    "expected": "ALLOW"
+  },
+  {
+    "id": "ST-002",
+    "request_id": "REQ-20260225-002",
+    "from": "Delivered",
+    "to": "Assigned",
+    "expected": "DENY",
+    "reason": "STATE_ROLLBACK"
+  },
+  {
+    "id": "ST-003",
+    "request_id": "REQ-20260225-001",
+    "from": "Tasked",
+    "to": "Tasked",
+    "expected": "ALLOW",
+    "idempotency_key": "idem-REQ-20260225-001-tasked-001"
+  }
+]

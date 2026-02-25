@@ -1,0 +1,377 @@
+{
+  "version": "2026-02-25",
+  "service": "viper",
+  "roles": {
+    "requester": {
+      "description": "External requester",
+      "default_scopes": [
+        "tasking.read",
+        "tasking.request.create",
+        "tasking.feasibility.read",
+        "tasking.quote.read",
+        "tasking.order.read",
+        "tasking.capture.read",
+        "tasking.template.read",
+        "tasking.template.write"
+      ]
+    },
+    "operator": {
+      "description": "Internal operator",
+      "inherits": [
+        "requester"
+      ],
+      "default_scopes": [
+        "ops.dashboard.read",
+        "ops.request.read",
+        "ops.request.write",
+        "tasking.capture.review",
+        "ops.uplink.read",
+        "ops.uplink.execute",
+        "ops.reception.read",
+        "ops.reception.write"
+      ]
+    },
+    "approver": {
+      "description": "Approver",
+      "default_scopes": [
+        "tasking.read",
+        "tasking.quote.read",
+        "tasking.order.read",
+        "tasking.quote.approve",
+        "ops.dashboard.read",
+        "ops.request.read",
+        "ops.uplink.read",
+        "ops.reception.read",
+        "tasking.template.read"
+      ]
+    },
+    "admin": {
+      "description": "System admin",
+      "default_scopes": [
+        "ops.admin.manage"
+      ],
+      "superuser": true
+    }
+  },
+  "policies": {
+    "deny_by_default": true,
+    "require_authentication": true,
+    "ownership_check_for_requester": true,
+    "ops_routes_internal_only": true,
+    "mfa_required_for_sensitive_routes": true
+  },
+  "route_permissions": [
+    {
+      "route": "/portal/dashboard",
+      "method": "GET",
+      "screen": "SCR-001",
+      "allowed_roles": [
+        "requester",
+        "operator",
+        "approver",
+        "admin"
+      ],
+      "required_scopes": [
+        "tasking.read"
+      ]
+    },
+    {
+      "route": "/portal/requests",
+      "method": "POST",
+      "screen": "SCR-002",
+      "allowed_roles": [
+        "requester",
+        "operator",
+        "admin"
+      ],
+      "required_scopes": [
+        "tasking.request.create"
+      ]
+    },
+    {
+      "route": "/portal/feasibility/:requestId",
+      "method": "GET",
+      "screen": "SCR-003",
+      "allowed_roles": [
+        "requester",
+        "operator",
+        "approver",
+        "admin"
+      ],
+      "required_scopes": [
+        "tasking.feasibility.read"
+      ],
+      "resource_rules": {
+        "requester": [
+          "owner_only"
+        ]
+      }
+    },
+    {
+      "route": "/portal/quotes/:requestId",
+      "method": "GET",
+      "screen": "SCR-004",
+      "allowed_roles": [
+        "requester",
+        "operator",
+        "approver",
+        "admin"
+      ],
+      "required_scopes": [
+        "tasking.quote.read"
+      ]
+    },
+    {
+      "route": "/portal/quotes/:requestId/approve",
+      "method": "POST",
+      "screen": "SCR-004",
+      "allowed_roles": [
+        "approver",
+        "admin"
+      ],
+      "required_scopes": [
+        "tasking.quote.approve"
+      ],
+      "audit": true
+    },
+    {
+      "route": "/portal/orders",
+      "method": "GET",
+      "screen": "SCR-005",
+      "allowed_roles": [
+        "requester",
+        "operator",
+        "approver",
+        "admin"
+      ],
+      "required_scopes": [
+        "tasking.order.read"
+      ]
+    },
+    {
+      "route": "/portal/orders/:requestId/captures",
+      "method": "GET",
+      "screen": "SCR-006",
+      "allowed_roles": [
+        "requester",
+        "operator",
+        "approver",
+        "admin"
+      ],
+      "required_scopes": [
+        "tasking.capture.read"
+      ]
+    },
+    {
+      "route": "/portal/orders/:requestId/captures/review",
+      "method": "POST",
+      "screen": "SCR-006",
+      "allowed_roles": [
+        "operator",
+        "admin"
+      ],
+      "required_scopes": [
+        "tasking.capture.review"
+      ],
+      "audit": true
+    },
+    {
+      "route": "/portal/templates",
+      "method": "GET",
+      "screen": "SCR-007",
+      "allowed_roles": [
+        "requester",
+        "operator",
+        "approver",
+        "admin"
+      ],
+      "required_scopes": [
+        "tasking.template.read"
+      ]
+    },
+    {
+      "route": "/portal/templates",
+      "method": "POST",
+      "screen": "SCR-007",
+      "allowed_roles": [
+        "requester",
+        "operator",
+        "admin"
+      ],
+      "required_scopes": [
+        "tasking.template.write"
+      ]
+    },
+    {
+      "route": "/ops/dashboard",
+      "method": "GET",
+      "screen": "SCR-001",
+      "allowed_roles": [
+        "operator",
+        "approver",
+        "admin"
+      ],
+      "required_scopes": [
+        "ops.dashboard.read"
+      ],
+      "network_rules": [
+        "internal_or_vpn"
+      ]
+    },
+    {
+      "route": "/ops/requests",
+      "method": "GET",
+      "screen": "SCR-002~006",
+      "allowed_roles": [
+        "operator",
+        "approver",
+        "admin"
+      ],
+      "required_scopes": [
+        "ops.request.read"
+      ],
+      "network_rules": [
+        "internal_or_vpn"
+      ]
+    },
+    {
+      "route": "/ops/requests",
+      "method": "PATCH",
+      "screen": "SCR-002~006",
+      "allowed_roles": [
+        "operator",
+        "admin"
+      ],
+      "required_scopes": [
+        "ops.request.write"
+      ],
+      "audit": true,
+      "network_rules": [
+        "internal_or_vpn"
+      ]
+    },
+    {
+      "route": "/ops/tasking/uplink",
+      "method": "GET",
+      "screen": "SCR-009",
+      "allowed_roles": [
+        "operator",
+        "approver",
+        "admin"
+      ],
+      "required_scopes": [
+        "ops.uplink.read"
+      ],
+      "network_rules": [
+        "internal_or_vpn"
+      ]
+    },
+    {
+      "route": "/ops/tasking/uplink/execute",
+      "method": "POST",
+      "screen": "SCR-009",
+      "allowed_roles": [
+        "operator",
+        "admin"
+      ],
+      "required_scopes": [
+        "ops.uplink.execute"
+      ],
+      "preconditions": [
+        "request_status=APPROVED"
+      ],
+      "audit": true,
+      "network_rules": [
+        "internal_or_vpn"
+      ],
+      "mfa_required": true
+    },
+    {
+      "route": "/ops/tasking/reception",
+      "method": "GET",
+      "screen": "SCR-010",
+      "allowed_roles": [
+        "operator",
+        "approver",
+        "admin"
+      ],
+      "required_scopes": [
+        "ops.reception.read"
+      ],
+      "network_rules": [
+        "internal_or_vpn"
+      ]
+    },
+    {
+      "route": "/ops/tasking/reception/actions",
+      "method": "POST",
+      "screen": "SCR-010",
+      "allowed_roles": [
+        "operator",
+        "admin"
+      ],
+      "required_scopes": [
+        "ops.reception.write"
+      ],
+      "audit": true,
+      "network_rules": [
+        "internal_or_vpn"
+      ]
+    },
+    {
+      "route": "/ops/templates",
+      "method": "GET",
+      "screen": "SCR-007",
+      "allowed_roles": [
+        "operator",
+        "approver",
+        "admin"
+      ],
+      "required_scopes": [
+        "tasking.template.read"
+      ],
+      "network_rules": [
+        "internal_or_vpn"
+      ]
+    },
+    {
+      "route": "/ops/admin",
+      "method": "GET",
+      "screen": "SCR-008",
+      "allowed_roles": [
+        "admin"
+      ],
+      "required_scopes": [
+        "ops.admin.manage"
+      ],
+      "network_rules": [
+        "internal_or_vpn"
+      ],
+      "mfa_required": true
+    },
+    {
+      "route": "/ops/admin",
+      "method": "PATCH",
+      "screen": "SCR-008",
+      "allowed_roles": [
+        "admin"
+      ],
+      "required_scopes": [
+        "ops.admin.manage"
+      ],
+      "audit": true,
+      "network_rules": [
+        "internal_or_vpn"
+      ],
+      "mfa_required": true
+    }
+  ],
+  "error_codes": {
+    "unauthenticated": "ERR_AUTH_UNAUTHENTICATED",
+    "forbidden_role": "ERR_AUTH_FORBIDDEN_ROLE",
+    "forbidden_scope": "ERR_AUTH_FORBIDDEN_SCOPE",
+    "forbidden_resource": "ERR_AUTH_FORBIDDEN_RESOURCE",
+    "forbidden_network": "ERR_AUTH_FORBIDDEN_NETWORK",
+    "forbidden_mfa": "ERR_AUTH_FORBIDDEN_MFA"
+  }
+}

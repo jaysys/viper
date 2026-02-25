@@ -1,0 +1,29 @@
+[
+  {
+    "id": "SLA-001",
+    "request_id": "REQ-20260225-001",
+    "type": "WINDOW_EXPIRY_IMMINENT",
+    "threshold_minutes": 60,
+    "current_minutes": 45,
+    "severity": "HIGH",
+    "expected_action": "ALERT"
+  },
+  {
+    "id": "SLA-002",
+    "request_id": "REQ-20260225-003",
+    "type": "LEAD_TIME_VIOLATION",
+    "threshold_hours": 6,
+    "current_hours": 2,
+    "severity": "HIGH",
+    "expected_action": "BLOCK_SUBMIT"
+  },
+  {
+    "id": "SLA-003",
+    "request_id": "REQ-20260225-002",
+    "type": "PARTIAL_FULFILLMENT",
+    "required_coverage_pct": 100,
+    "actual_coverage_pct": 82,
+    "severity": "MEDIUM",
+    "expected_action": "REVIEW_REQUIRED"
+  }
+]

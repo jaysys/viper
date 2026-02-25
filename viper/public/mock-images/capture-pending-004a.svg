@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720">
+  <defs>
+    <linearGradient id="bg5" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#102a43"/>
+      <stop offset="100%" stop-color="#1f4f72"/>
+    </linearGradient>
+  </defs>
+  <rect width="1280" height="720" fill="url(#bg5)"/>
+  <rect x="140" y="120" width="1000" height="500" rx="18" fill="#0b1f31" opacity="0.48" stroke="#8fbce6" stroke-width="3"/>
+  <g opacity="0.75">
+    <line x1="140" y1="220" x2="1140" y2="220" stroke="#8fbce6" stroke-width="1"/>
+    <line x1="140" y1="320" x2="1140" y2="320" stroke="#8fbce6" stroke-width="1"/>
+    <line x1="140" y1="420" x2="1140" y2="420" stroke="#8fbce6" stroke-width="1"/>
+    <line x1="140" y1="520" x2="1140" y2="520" stroke="#8fbce6" stroke-width="1"/>
+    <line x1="340" y1="120" x2="340" y2="620" stroke="#8fbce6" stroke-width="1"/>
+    <line x1="540" y1="120" x2="540" y2="620" stroke="#8fbce6" stroke-width="1"/>
+    <line x1="740" y1="120" x2="740" y2="620" stroke="#8fbce6" stroke-width="1"/>
+    <line x1="940" y1="120" x2="940" y2="620" stroke="#8fbce6" stroke-width="1"/>
+  </g>
+  <path d="M270 250 L900 210 L1020 500 L400 560 Z" fill="none" stroke="#4dd0e1" stroke-width="5"/>
+  <path d="M320 280 L860 250 L940 490 L440 530 Z" fill="#26c6da" opacity="0.12"/>
+  <text x="40" y="66" fill="#ffffff" font-size="38" font-family="Arial, sans-serif">CAP-004-A / PENDING</text>
+  <text x="40" y="112" fill="#d9ecff" font-size="24" font-family="Arial, sans-serif">Night pass acquired, geo-registration in progress</text>
+  <rect x="930" y="24" width="318" height="88" rx="8" fill="#0a1f2d" opacity="0.74"/>
+  <text x="950" y="58" fill="#80deea" font-size="24" font-family="Arial, sans-serif">QUALITY: PENDING</text>
+  <text x="950" y="90" fill="#d7f7fb" font-size="20" font-family="Arial, sans-serif">CLOUD: 0% / RES: 0.6m</text>
+</svg>

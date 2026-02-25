@@ -1,0 +1,75 @@
+[
+  {
+    "satellite_id": "SAT-EO-07",
+    "name": "KOMPSAT-EO-07",
+    "sensors": ["EO"],
+    "status": "AVAILABLE",
+    "health_score": 98,
+    "daily_capacity": 6,
+    "assigned_today": 3,
+    "contact_windows": [
+      { "start": "2026-02-26T01:10:00Z", "end": "2026-02-26T01:35:00Z", "ground_station": "GS-DAEJEON" },
+      { "start": "2026-02-26T03:25:00Z", "end": "2026-02-26T03:44:00Z", "ground_station": "GS-JEJU" }
+    ]
+  },
+  {
+    "satellite_id": "SAT-SAR-03",
+    "name": "KOMPSAT-SAR-03",
+    "sensors": ["SAR"],
+    "status": "AVAILABLE",
+    "health_score": 95,
+    "daily_capacity": 5,
+    "assigned_today": 2,
+    "contact_windows": [
+      { "start": "2026-02-26T09:15:00Z", "end": "2026-02-26T09:40:00Z", "ground_station": "GS-ULSAN" },
+      { "start": "2026-02-26T11:32:00Z", "end": "2026-02-26T11:51:00Z", "ground_station": "GS-JEJU" }
+    ]
+  },
+  {
+    "satellite_id": "SAT-EO-05",
+    "name": "KOMPSAT-EO-05",
+    "sensors": ["EO"],
+    "status": "DEGRADED",
+    "health_score": 63,
+    "daily_capacity": 4,
+    "assigned_today": 4,
+    "contact_windows": [
+      { "start": "2026-02-26T01:18:00Z", "end": "2026-02-26T01:29:00Z", "ground_station": "GS-DAEJEON" }
+    ]
+  },
+  {
+    "satellite_id": "SAT-MULTI-11",
+    "name": "VIPER-MULTI-11",
+    "sensors": ["EO", "SAR"],
+    "status": "AVAILABLE",
+    "health_score": 93,
+    "daily_capacity": 8,
+    "assigned_today": 5,
+    "contact_windows": [
+      { "start": "2026-02-26T01:20:00Z", "end": "2026-02-26T01:50:00Z", "ground_station": "GS-JEJU" },
+      { "start": "2026-02-26T09:20:00Z", "end": "2026-02-26T09:48:00Z", "ground_station": "GS-ULSAN" }
+    ]
+  },
+  {
+    "satellite_id": "SAT-EO-02",
+    "name": "KOMPSAT-EO-02",
+    "sensors": ["EO"],
+    "status": "MAINTENANCE",
+    "health_score": 40,
+    "daily_capacity": 0,
+    "assigned_today": 0,
+    "contact_windows": []
+  },
+  {
+    "satellite_id": "SAT-SAR-08",
+    "name": "KOMPSAT-SAR-08",
+    "sensors": ["SAR"],
+    "status": "AVAILABLE",
+    "health_score": 88,
+    "daily_capacity": 3,
+    "assigned_today": 3,
+    "contact_windows": [
+      { "start": "2026-02-26T07:00:00Z", "end": "2026-02-26T07:10:00Z", "ground_station": "GS-ULSAN" }
+    ]
+  }
+]

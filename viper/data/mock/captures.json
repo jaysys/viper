@@ -1,0 +1,90 @@
+{
+  "REQ-20260225-001": [
+    {
+      "capture_id": "CAP-001-A",
+      "quality": "PENDING",
+      "cloud_pct": 18,
+      "resolution_m": 0.5,
+      "delivery": "PENDING",
+      "reject_reason_code": null,
+      "trace_id": "REQ-20260225-001",
+      "capture_mode": "SPOTLIGHT",
+      "sensor_type": "EO",
+      "acquired_at": "2026-02-25T09:10:00Z",
+      "thumbnail_url": "/mock-images/real-scenes/scene-urban-city.jpg",
+      "full_url": "/mock-images/real-scenes/scene-urban-city.jpg",
+      "source": "Wikimedia Commons - Satellite image of France in August 2002",
+      "license": "Public Domain"
+    }
+  ],
+  "REQ-20260225-002": [
+    {
+      "capture_id": "CAP-002-A",
+      "quality": "PASS",
+      "cloud_pct": 5,
+      "resolution_m": 1,
+      "delivery": "READY",
+      "reject_reason_code": null,
+      "trace_id": "REQ-20260225-002",
+      "capture_mode": "STRIPMAP",
+      "sensor_type": "EO",
+      "acquired_at": "2026-02-25T09:35:00Z",
+      "thumbnail_url": "/mock-images/real-scenes/scene-farmland.jpg",
+      "full_url": "/mock-images/real-scenes/scene-farmland.jpg",
+      "source": "Wikimedia Commons - Mojave Desert and San Joaquin Valley satellite image",
+      "license": "Public Domain"
+    },
+    {
+      "capture_id": "CAP-002-B",
+      "quality": "CONDITIONAL",
+      "cloud_pct": 22,
+      "resolution_m": 1,
+      "delivery": "READY",
+      "reject_reason_code": "QC_CONDITIONAL_CLOUD",
+      "trace_id": "REQ-20260225-002",
+      "capture_mode": "STRIPMAP",
+      "sensor_type": "EO",
+      "acquired_at": "2026-02-25T09:41:00Z",
+      "thumbnail_url": "/mock-images/real-scenes/scene-flood.jpg",
+      "full_url": "/mock-images/real-scenes/scene-flood.jpg",
+      "source": "Wikimedia Commons - Flooding in Pakistan (NASA satellite imagery)",
+      "license": "Public Domain"
+    }
+  ],
+  "REQ-20260225-003": [
+    {
+      "capture_id": "CAP-003-A",
+      "quality": "FAIL",
+      "cloud_pct": 58,
+      "resolution_m": 1.5,
+      "delivery": "BLOCKED",
+      "reject_reason_code": "QC_CLOUD_OVER_LIMIT",
+      "trace_id": "REQ-20260225-003",
+      "capture_mode": "WIDE",
+      "sensor_type": "EO",
+      "acquired_at": "2026-02-25T10:05:00Z",
+      "thumbnail_url": "/mock-images/real-scenes/scene-wildfire.jpg",
+      "full_url": "/mock-images/real-scenes/scene-wildfire.jpg",
+      "source": "Wikimedia Commons - Greece wildfire monitoring from space",
+      "license": "Public Domain (NASA)"
+    }
+  ],
+  "REQ-20260225-004": [
+    {
+      "capture_id": "CAP-004-A",
+      "quality": "PENDING",
+      "cloud_pct": 0,
+      "resolution_m": 0.6,
+      "delivery": "PENDING",
+      "reject_reason_code": null,
+      "trace_id": "REQ-20260225-004",
+      "capture_mode": "SPOTLIGHT",
+      "sensor_type": "SAR",
+      "acquired_at": "2026-02-25T11:20:00Z",
+      "thumbnail_url": "/mock-images/real-scenes/scene-harbor.jpg",
+      "full_url": "/mock-images/real-scenes/scene-harbor.jpg",
+      "source": "Wikimedia Commons - Astronaut photograph of Pearl Harbor",
+      "license": "Public Domain"
+    }
+  ]
+}

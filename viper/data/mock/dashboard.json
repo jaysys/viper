@@ -1,0 +1,47 @@
+{
+  "requester": {
+    "kpis": [
+      {"key": "my_requests_today", "label": "내 요청(오늘)", "value": 3},
+      {"key": "my_in_progress", "label": "진행중", "value": 2},
+      {"key": "my_delivered", "label": "납품완료", "value": 1}
+    ],
+    "alerts": [
+      {"id": "ALT-R-001", "level": "MEDIUM", "message": "REQ-20260225-001 만료 임박"}
+    ],
+    "widgets": ["my_kpi", "my_alerts", "my_recent_requests"]
+  },
+  "operator": {
+    "kpis": [
+      {"key": "ops_in_progress", "label": "운영 진행건", "value": 8},
+      {"key": "ops_failed", "label": "실패건", "value": 1},
+      {"key": "ops_avg_lead_time", "label": "평균 리드타임(h)", "value": 14}
+    ],
+    "alerts": [
+      {"id": "ALT-O-001", "level": "HIGH", "message": "UPL-1003 연속 실패 3회"},
+      {"id": "ALT-O-002", "level": "MEDIUM", "message": "REQ-20260225-003 checksum mismatch"}
+    ],
+    "widgets": ["ops_kpi", "ops_alerts", "uplink_queue", "reception_queue"]
+  },
+  "approver": {
+    "kpis": [
+      {"key": "approval_pending", "label": "승인 대기", "value": 1},
+      {"key": "budget_over_limit", "label": "예산 초과", "value": 0},
+      {"key": "approved_today", "label": "오늘 승인", "value": 2}
+    ],
+    "alerts": [
+      {"id": "ALT-A-001", "level": "MEDIUM", "message": "REQ-20260225-004 승인 대기"}
+    ],
+    "widgets": ["approval_kpi", "approval_queue", "risk_summary"]
+  },
+  "admin": {
+    "kpis": [
+      {"key": "active_users", "label": "활성 사용자", "value": 24},
+      {"key": "policy_changes_today", "label": "정책 변경", "value": 2},
+      {"key": "auth_errors", "label": "권한 오류", "value": 1}
+    ],
+    "alerts": [
+      {"id": "ALT-M-001", "level": "HIGH", "message": "admin 정책 변경 2건 검토 필요"}
+    ],
+    "widgets": ["admin_kpi", "policy_audit", "system_health"]
+  }
+}

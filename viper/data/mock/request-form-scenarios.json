@@ -1,0 +1,58 @@
+[
+  {
+    "id": "FORM-OK-001",
+    "label": "정상 요청",
+    "request_name": "세종 주간 EO 수집",
+    "sensor": "EO",
+    "aoi_km2": 12,
+    "vertex": 18,
+    "lead_hours": 24,
+    "window_minutes": 180,
+    "cloud_pct": 20,
+    "off_nadir": 25,
+    "incidence": null,
+    "preferred_satellite_ids": ["SAT-EO-07", "SAT-MULTI-11"]
+  },
+  {
+    "id": "FORM-ERR-LEAD",
+    "label": "시간 제약 위반",
+    "request_name": "긴급 야간 촬영",
+    "sensor": "EO",
+    "aoi_km2": 8,
+    "vertex": 10,
+    "lead_hours": 2,
+    "window_minutes": 20,
+    "cloud_pct": 15,
+    "off_nadir": 10,
+    "incidence": null,
+    "preferred_satellite_ids": ["SAT-EO-07"]
+  },
+  {
+    "id": "FORM-ERR-AOI",
+    "label": "AOI 제약 위반",
+    "request_name": "광역 구역 샘플",
+    "sensor": "SAR",
+    "aoi_km2": 180,
+    "vertex": 120,
+    "lead_hours": 12,
+    "window_minutes": 45,
+    "cloud_pct": null,
+    "off_nadir": null,
+    "incidence": 48,
+    "preferred_satellite_ids": ["SAT-SAR-03", "SAT-SAR-08"]
+  },
+  {
+    "id": "FORM-ERR-PREF",
+    "label": "선호 위성 제약 위반",
+    "request_name": "도심 EO 긴급 점검",
+    "sensor": "EO",
+    "aoi_km2": 9,
+    "vertex": 12,
+    "lead_hours": 18,
+    "window_minutes": 90,
+    "cloud_pct": 25,
+    "off_nadir": 20,
+    "incidence": null,
+    "preferred_satellite_ids": ["SAT-SAR-03", "SAT-EO-02"]
+  }
+]

@@ -1,0 +1,75 @@
+[
+  {
+    "id": "UALLOC-OK-001",
+    "type": "normal",
+    "request_id": "REQ-20260225-001",
+    "satellite_id": "SAT-EO-07",
+    "scheduled_at": "2026-02-26T01:20:00Z",
+    "expected": "ALLOW",
+    "reason_code": "OK_CAPABLE_AND_WINDOW"
+  },
+  {
+    "id": "UALLOC-OK-002",
+    "type": "normal",
+    "request_id": "REQ-20260225-002",
+    "satellite_id": "SAT-SAR-03",
+    "scheduled_at": "2026-02-26T09:30:00Z",
+    "expected": "ALLOW",
+    "reason_code": "OK_CAPABLE_AND_WINDOW"
+  },
+  {
+    "id": "UALLOC-OK-003",
+    "type": "normal",
+    "request_id": "REQ-20260225-001",
+    "satellite_id": "SAT-MULTI-11",
+    "scheduled_at": "2026-02-26T01:24:00Z",
+    "primary_failed_satellite_id": "SAT-EO-05",
+    "expected": "ALLOW",
+    "reason_code": "OK_FAILOVER_TO_BACKUP"
+  },
+  {
+    "id": "UALLOC-DENY-001",
+    "type": "abnormal",
+    "request_id": "REQ-20260225-001",
+    "satellite_id": "SAT-SAR-03",
+    "scheduled_at": "2026-02-26T01:20:00Z",
+    "expected": "DENY",
+    "reason_code": "SENSOR_MISMATCH"
+  },
+  {
+    "id": "UALLOC-DENY-002",
+    "type": "abnormal",
+    "request_id": "REQ-20260225-004",
+    "satellite_id": "SAT-EO-07",
+    "scheduled_at": "2026-02-26T01:22:00Z",
+    "expected": "DENY",
+    "reason_code": "QUOTE_NOT_APPROVED"
+  },
+  {
+    "id": "UALLOC-DENY-003",
+    "type": "abnormal",
+    "request_id": "REQ-20260225-001",
+    "satellite_id": "SAT-EO-02",
+    "scheduled_at": "2026-02-26T01:22:00Z",
+    "expected": "DENY",
+    "reason_code": "SATELLITE_UNAVAILABLE"
+  },
+  {
+    "id": "UALLOC-DENY-004",
+    "type": "abnormal",
+    "request_id": "REQ-20260225-002",
+    "satellite_id": "SAT-SAR-08",
+    "scheduled_at": "2026-02-26T09:30:00Z",
+    "expected": "DENY",
+    "reason_code": "NO_CONTACT_WINDOW"
+  },
+  {
+    "id": "UALLOC-DENY-005",
+    "type": "abnormal",
+    "request_id": "REQ-20260225-001",
+    "satellite_id": "SAT-EO-05",
+    "scheduled_at": "2026-02-26T01:23:00Z",
+    "expected": "DENY",
+    "reason_code": "CAPACITY_EXCEEDED"
+  }
+]

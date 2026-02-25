@@ -1,0 +1,41 @@
+{
+  "quotas": [
+    { "org": "acme", "monthly_task_limit": 300, "used": 127, "credit_balance": 18200 },
+    { "org": "beta", "monthly_task_limit": 120, "used": 118, "credit_balance": 900 }
+  ],
+  "policies": [
+    { "key": "mfa_required_for_sensitive_routes", "value": true, "updated_by": "admin-01", "updated_at": "2026-02-25T01:00:00Z" },
+    { "key": "ops_internal_or_vpn_only", "value": true, "updated_by": "admin-01", "updated_at": "2026-02-24T22:40:00Z" },
+    { "key": "uplink_retry_threshold", "value": 3, "updated_by": "admin-02", "updated_at": "2026-02-24T11:12:00Z" }
+  ],
+  "approval_lines": [
+    { "name": "표준승인선", "max_without_escalation": 10000, "approvers": ["approver-01"] },
+    { "name": "고액승인선", "max_without_escalation": 50000, "approvers": ["approver-01", "approver-02"] }
+  ],
+  "audit_logs": [
+    {
+      "id": "AUD-001",
+      "actor": "admin-01",
+      "action": "UPDATE_POLICY",
+      "target": "mfa_required_for_sensitive_routes",
+      "result": "SUCCESS",
+      "at": "2026-02-25T01:00:00Z"
+    },
+    {
+      "id": "AUD-002",
+      "actor": "admin-02",
+      "action": "UPDATE_QUOTA",
+      "target": "org:beta",
+      "result": "SUCCESS",
+      "at": "2026-02-24T20:22:00Z"
+    },
+    {
+      "id": "AUD-003",
+      "actor": "operator-03",
+      "action": "ACCESS_ADMIN_ROUTE",
+      "target": "/ops/admin",
+      "result": "DENY",
+      "at": "2026-02-24T20:25:00Z"
+    }
+  ]
+}

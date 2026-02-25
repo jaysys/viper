@@ -1,0 +1,38 @@
+[
+  {
+    "request_id": "REQ-20260225-001",
+    "currency": "USD",
+    "base_cost": 1200,
+    "sla_cost": 350,
+    "options_cost": 180,
+    "total": 1730,
+    "approval_state": "APPROVED"
+  },
+  {
+    "request_id": "REQ-20260225-002",
+    "currency": "USD",
+    "base_cost": 980,
+    "sla_cost": 120,
+    "options_cost": 90,
+    "total": 1190,
+    "approval_state": "APPROVED"
+  },
+  {
+    "request_id": "REQ-20260225-003",
+    "currency": "USD",
+    "base_cost": 740,
+    "sla_cost": 0,
+    "options_cost": 60,
+    "total": 800,
+    "approval_state": "REJECTED"
+  },
+  {
+    "request_id": "REQ-20260225-004",
+    "currency": "USD",
+    "base_cost": 860,
+    "sla_cost": 90,
+    "options_cost": 40,
+    "total": 990,
+    "approval_state": "REQUESTED"
+  }
+]

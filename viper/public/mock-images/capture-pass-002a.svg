@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#153b2d"/>
+      <stop offset="100%" stop-color="#2f7d5a"/>
+    </linearGradient>
+    <pattern id="urban" width="40" height="40" patternUnits="userSpaceOnUse">
+      <rect width="40" height="40" fill="#315f49"/>
+      <rect x="4" y="4" width="12" height="10" fill="#95c9a9" opacity="0.35"/>
+      <rect x="22" y="8" width="13" height="9" fill="#95c9a9" opacity="0.28"/>
+      <rect x="10" y="22" width="17" height="12" fill="#95c9a9" opacity="0.32"/>
+    </pattern>
+  </defs>
+  <rect width="1280" height="720" fill="url(#bg)"/>
+  <path d="M0 120 L1280 90 L1280 220 L0 250 Z" fill="#1e5f7a" opacity="0.8"/>
+  <path d="M0 250 L1280 220 L1280 340 L0 370 Z" fill="#2f7d5a" opacity="0.9"/>
+  <path d="M0 370 L1280 340 L1280 720 L0 720 Z" fill="url(#urban)"/>
+  <path d="M460 180 L820 150 L910 430 L540 470 Z" fill="none" stroke="#ffd54f" stroke-width="6"/>
+  <path d="M495 215 L795 190 L860 415 L580 440 Z" fill="#b8ffcc" opacity="0.2"/>
+  <text x="40" y="66" fill="#ffffff" font-size="38" font-family="Arial, sans-serif">CAP-002-A / PASS</text>
+  <text x="40" y="112" fill="#d7ffe7" font-size="24" font-family="Arial, sans-serif">AOI clear, cloud mask 5%, radiometric check OK</text>
+  <rect x="980" y="24" width="268" height="88" rx="8" fill="#10251c" opacity="0.72"/>
+  <text x="1000" y="58" fill="#8dffb5" font-size="24" font-family="Arial, sans-serif">QUALITY: PASS</text>
+  <text x="1000" y="90" fill="#c5ffd9" font-size="20" font-family="Arial, sans-serif">RES: 1.0m</text>
+</svg>

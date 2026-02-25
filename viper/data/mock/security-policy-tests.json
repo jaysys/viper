@@ -1,0 +1,28 @@
+[
+  {
+    "id": "SEC-001",
+    "route": "/ops/tasking/uplink/execute",
+    "role": "operator",
+    "network": "external",
+    "mfa": true,
+    "expected": "DENY",
+    "error_code": "ERR_AUTH_FORBIDDEN_NETWORK"
+  },
+  {
+    "id": "SEC-002",
+    "route": "/ops/admin",
+    "role": "admin",
+    "network": "internal_or_vpn",
+    "mfa": false,
+    "expected": "DENY",
+    "error_code": "ERR_AUTH_FORBIDDEN_MFA"
+  },
+  {
+    "id": "SEC-003",
+    "route": "/ops/admin",
+    "role": "admin",
+    "network": "internal_or_vpn",
+    "mfa": true,
+    "expected": "ALLOW"
+  }
+]

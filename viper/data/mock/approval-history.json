@@ -1,0 +1,70 @@
+{
+  "REQ-20260225-001": [
+    {
+      "step": "REQUESTED",
+      "actor": "acme-user-01",
+      "at": "2026-02-25T00:12:00Z",
+      "comment": "신규 수집 요청"
+    },
+    {
+      "step": "REVIEWED",
+      "actor": "ops-lee",
+      "at": "2026-02-25T00:24:00Z",
+      "comment": "타당성 HIGH 확인"
+    },
+    {
+      "step": "APPROVED",
+      "actor": "approver-kim",
+      "at": "2026-02-25T00:30:00Z",
+      "comment": "예산 범위 내 승인"
+    }
+  ],
+  "REQ-20260225-002": [
+    {
+      "step": "REQUESTED",
+      "actor": "acme-user-01",
+      "at": "2026-02-25T07:10:00Z",
+      "comment": "정기 모니터링"
+    },
+    {
+      "step": "REVIEWED",
+      "actor": "ops-park",
+      "at": "2026-02-25T07:35:00Z",
+      "comment": "SAR 조건 조정"
+    },
+    {
+      "step": "APPROVED",
+      "actor": "approver-kim",
+      "at": "2026-02-25T07:43:00Z",
+      "comment": "조건부 승인"
+    }
+  ],
+  "REQ-20260225-003": [
+    {
+      "step": "REQUESTED",
+      "actor": "acme-user-02",
+      "at": "2026-02-24T21:05:00Z",
+      "comment": "긴급 요청"
+    },
+    {
+      "step": "REVIEWED",
+      "actor": "ops-lee",
+      "at": "2026-02-24T21:22:00Z",
+      "comment": "성공확률 낮음"
+    },
+    {
+      "step": "REJECTED",
+      "actor": "approver-kim",
+      "at": "2026-02-24T21:28:00Z",
+      "comment": "예산/성공률 기준 미달"
+    }
+  ],
+  "REQ-20260225-004": [
+    {
+      "step": "REQUESTED",
+      "actor": "acme-user-03",
+      "at": "2026-02-25T13:05:00Z",
+      "comment": "정기 관측 요청"
+    }
+  ]
+}

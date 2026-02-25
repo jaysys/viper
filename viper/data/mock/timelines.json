@@ -1,0 +1,27 @@
+{
+  "REQ-20260225-001": [
+    "Requested",
+    "Approved",
+    "Tasked"
+  ],
+  "REQ-20260225-002": [
+    "Requested",
+    "Approved",
+    "Tasked",
+    "Acquired",
+    "Downlinked",
+    "Processing",
+    "QA",
+    "Delivered",
+    "Completed"
+  ],
+  "REQ-20260225-003": [
+    "Requested",
+    "Approved",
+    "Tasked",
+    "Failed"
+  ],
+  "REQ-20260225-004": [
+    "Requested"
+  ]
+}

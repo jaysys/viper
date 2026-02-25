@@ -1,0 +1,22 @@
+[
+  {
+    "id": "OWN-001",
+    "actor_role": "requester",
+    "actor_id": "acme-user-01",
+    "request_id": "REQ-20260225-003",
+    "resource_owner": "acme-user-02",
+    "action": "GET /portal/quotes/REQ-20260225-003",
+    "expected": "DENY",
+    "error_code": "ERR_AUTH_FORBIDDEN_RESOURCE"
+  },
+  {
+    "id": "OWN-002",
+    "actor_role": "requester",
+    "actor_id": "acme-user-03",
+    "request_id": "REQ-20260225-001",
+    "resource_owner": "acme-user-01",
+    "action": "GET /portal/orders/REQ-20260225-001/captures",
+    "expected": "DENY",
+    "error_code": "ERR_AUTH_FORBIDDEN_RESOURCE"
+  }
+]

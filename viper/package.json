@@ -1,0 +1,23 @@
+{
+  "name": "viper",
+  "private": true,
+  "version": "0.1.0",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "verify:mock": "node scripts/run-full-mock-verification.mjs"
+  },
+  "dependencies": {
+    "next": "16.0.0",
+    "react": "19.2.0",
+    "react-dom": "19.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "22.10.2",
+    "@types/react": "19.2.2",
+    "@types/react-dom": "19.2.2",
+    "typescript": "5.7.2"
+  }
+}
