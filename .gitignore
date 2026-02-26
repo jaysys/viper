@@ -20,6 +20,9 @@ node_modules/
 **/node_modules/
 .pnpm-store/
 **/.next/
+**/next-env.d.ts
+*.tsbuildinfo
+.vercel/
 dist/
 build/
 coverage/
