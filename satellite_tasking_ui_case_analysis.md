@@ -83,4 +83,4 @@
 - ICEYE Create Task: https://docs.iceye.com/constellation/api/tasking/create-task/
 - Capella Tasking Parameters: https://support.capellaspace.com/what-are-capellas-tasking-parameters
 
-원하면 다음 단계로, 이 구성을 기준으로 `업무화면 IA(메뉴 트리) + 화면별 필드 정의서(초안)`까지 바로 만들어드리겠습니다.
+ 이 구성을 기준으로 `업무화면 IA(메뉴 트리) + 화면별 필드 정의서` 작성함!
