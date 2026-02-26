@@ -117,6 +117,13 @@
 
 ## 10. 다음 단계
 
-- 권장 스택 기준 프로젝트 초기 구조 수립
-- 권한 JSON을 사용하는 Mock Auth/Route Guard 기본 구현
-- SCR-002/005/009/010 우선 화면 프로토타입 제작
+- [완료] 권장 스택 기준 프로젝트 초기 구조 수립
+- [완료] 권한 JSON을 사용하는 Mock Auth/Route Guard 기본 구현
+- [완료] SCR-002/005/009/010 우선 화면 프로토타입 제작
+- [완료] SCR-001~SCR-010 전체 화면 프로토타입 확장
+- [완료] `/api/mock/*` fetch 기반 데이터 호출 전환
+- [완료] 다중 위성 fleet + uplink allocation 정상/비정상 목데이터 및 검증 반영
+- [완료] 요청자 선호 위성 지정(SCR-002), 운영자 재할당 시뮬레이션(SCR-009) 반영
+- [완료] 통합 mock 검증 스크립트(`pnpm verify:mock`) 반영
+- [다음] 실제 백엔드 API/OpenAPI 스키마로 mock API 치환
+- [다음] E2E 자동화(Playwright)와 지도(AOI) 상호작용 고도화
