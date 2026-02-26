@@ -1,4 +1,4 @@
-# viper
+# Viper UI prototype
 
 Next.js 기반의 viper 프런트엔드 프로토타입입니다.
 
