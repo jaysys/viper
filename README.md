@@ -1,5 +1,5 @@
 
 
-Viper UI Prototype with Mock json Data
+Viper UI Prototype with mock json data
 
 
